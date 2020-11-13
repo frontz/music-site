@@ -1,3 +1,4 @@
+import { ISender } from './../../models/sender';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+
+  sender: Partial<ISender> = {};
 
   constructor() { }
 
