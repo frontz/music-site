@@ -1,28 +1,34 @@
 <div class="container">
-  <form #form="ngForm">
-    <div class="form-group">
-      <label for="exampleInputEmail1">Name</label>
-      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name"
-        [(ngModel)]="sender.name" required>
-      <small id="nameHelp" class="form-text text-muted">Podaj proszę swoje imię</small>
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <form #form="ngForm">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Name</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name"
+            [(ngModel)]="sender.name" required>
+          <small id="nameHelp" class="form-text text-muted" *ngIf="!sender.name">Podaj proszę swoje imię</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email"
+            [(ngModel)]="sender.email" required>
+          <small id="emailHelp" class="form-text text-muted" *ngIf="!sender.name">Wpisz swój email</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputMessage">Message</label>
+          <textarea type="text" class="form-control" id="exampleInputMessage" name="msg" [(ngModel)]="sender.msg"
+            required></textarea>
+          <small id="msgHelp" class="form-text text-muted" *ngIf="!sender.msg">Wpisz treść wiadomości</small>
+        </div>
+        <div class="form-group form-check is-invalid">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" name="policy" [(ngModel)]="sender.policy"
+            required>
+          <label class="form-check-label" for="exampleCheck1">Polityka prywatności</label><br>
+          <small id="policyHelp" class="form-text text-muted" *ngIf="!sender.policy">Zaznacz zgodę</small>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Wyślij</button>
+        <button type="reset" class="btn btn-primary" style="margin-left: 20px;">Wyczyść</button>
+      </form>
     </div>
-    <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email"
-        [(ngModel)]="sender.email" required>
-      <small id="emailHelp" class="form-text text-muted">Twój email nie pozostanie bez odpowiedzi</small>
-    </div>
-    <div class="form-group">
-      <label for="exampleInputPassword1">Message</label>
-      <textarea type="text" class="form-control" id="exampleInputMessage" name="msg" [(ngModel)]="sender.msg"
-        required></textarea>
-    </div>
-    <div class="form-group form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="policy" [(ngModel)]="sender.policy"
-        required>
-      <label class="form-check-label" for="exampleCheck1">Polityka prywatności</label>
-    </div>
-    <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Wyślij</button>
-    <button type="reset" class="btn btn-primary" style="margin-left: 20px;">Wyczyść</button>
-  </form>
-</div>
+  </div>
