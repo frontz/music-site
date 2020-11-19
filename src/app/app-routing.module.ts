@@ -1,3 +1,4 @@
+import { ShopComponent } from './components/shop/shop.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { MediaComponent } from './components/media/media.component';
 import { ProjectsComponent } from './components/projects/projects.component';
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path: 'about', component: AboutComponent},
   {path: 'projects', component: ProjectsComponent},
   {path: 'media', component: MediaComponent},
+  {path: 'shop', component: ShopComponent},
   {path: 'contact', component: ContactComponent}
 ];
 

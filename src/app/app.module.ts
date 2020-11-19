@@ -10,6 +10,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { MediaComponent } from './components/media/media.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FormsModule } from '@angular/forms';
+import { ShopComponent } from './components/shop/shop.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FormsModule } from '@angular/forms';
     AboutComponent,
     ProjectsComponent,
     MediaComponent,
-    ContactComponent
+    ContactComponent,
+    ShopComponent
   ],
   imports: [
     BrowserModule,
