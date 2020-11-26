@@ -1,0 +1,22 @@
+#examples {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #999;
+  position: relative;
+}
+
+hr {
+  width: 90%;
+}
+
+#examples button {
+  position: absolute;               /* 2 */
+   top: 50%;                         /* 3 */
+   transform: translate(0, -50%);   /* 4 */
+}
+
+#examples audio {
+  position: absolute;               /* 2 */
+   top: 50%;                         /* 3 */
+   transform: translate(0, -50%);   /* 4 */
+}

@@ -24,9 +24,13 @@ import { ShopComponent } from './components/shop/shop.component';
   ],
   imports: [
     BrowserModule,
+    NgbModule,
     AppRoutingModule,
     FormsModule,
     NgbModule
+  ],
+  exports: [
+    HomeComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
