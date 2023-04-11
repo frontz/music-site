@@ -1,0 +1,11 @@
+a {
+  color: lightgray;
+}
+
+a:hover {
+  color: white;
+}
+
+a:focus {
+  color: white;
+}
