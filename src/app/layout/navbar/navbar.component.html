@@ -7,7 +7,7 @@
       class="navbar-brand d-sm-none d-md-block d-none d-sm-block"
       routerLink="/"
       style="margin-left: 50px"
-      >Tomasz Frączek - kompozytor, instrumentalista</a
+      >{{ 'title' | translate}}</a
     >
     <a
       class="navbar-brand d-block d-sm-none"
@@ -73,8 +73,35 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item" style="margin-right: 50px">
+          <li class="nav-item" >
             <a class="nav-link"routerLink="/contact">Kontakt</a>
+          </li>
+          <li class="nav-item dropdown" style="margin-right: 50px">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDarkDropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Set Lang
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-dark"
+              aria-labelledby="navbarDarkDropdownMenuLink"
+            >
+              <li>
+                <a class="dropdown-item" (click)="translate.use('pl')"
+                  >PL</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" (click)="translate.use('en')"
+                  >EN</a
+                >
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
