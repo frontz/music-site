@@ -1,3 +1,10 @@
 {
-    "title": "Tomasz Frączek - composer, instrumentalist"
+    "nav": {
+        "title": "Tomasz Frączek - composer, instrumentalist",
+        "about": "About",
+        "music": "Music",
+        "original-projects": "Original projects",
+        "custom-music": "Custom music",
+        "contact": "Contact"
+    }
 }

@@ -9,3 +9,12 @@ a:hover {
 a:focus {
   color: white;
 }
+
+img {
+  width: 40px;
+}
+
+.dropdown-menu {
+  min-width: 8rem;
+  cursor: pointer;
+}

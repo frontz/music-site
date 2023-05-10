@@ -7,7 +7,7 @@
       class="navbar-brand d-sm-none d-md-block d-none d-sm-block"
       routerLink="/"
       style="margin-left: 50px"
-      >{{ 'title' | translate}}</a
+      >{{ 'nav.title' | translate}}</a
     >
     <a
       class="navbar-brand d-block d-sm-none"
@@ -19,7 +19,7 @@
       class="navbar-brand d-none d-sm-block d-md-none"
       routerLink="/"
       style="margin-left: 50px"
-      >Tomasz Frączek - kompozytor, instrumentalista</a
+      >{{ 'nav.title' | translate}}</a
     >
     <button
       class="navbar-toggler"
@@ -43,7 +43,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" routerLink="/about"
-              >O sobie</a
+              >{{ 'nav.about' | translate}}</a
             >
           </li>
           <li class="nav-item dropdown">
@@ -55,7 +55,7 @@
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              Muzyka
+            {{ 'nav.music' | translate}}
             </a>
             <ul
               class="dropdown-menu dropdown-menu-dark"
@@ -63,18 +63,18 @@
             >
               <li>
                 <a class="dropdown-item" routerLink="/original-projects"
-                  >Projekty autorskie</a
+                  >{{ 'nav.original-projects' | translate}}</a
                 >
               </li>
               <li>
                 <a class="dropdown-item" routerLink="/custom-music"
-                  >Muzyka na zamówienie</a
+                  >{{ 'nav.custom-music' | translate}}</a
                 >
               </li>
             </ul>
           </li>
           <li class="nav-item" >
-            <a class="nav-link"routerLink="/contact">Kontakt</a>
+            <a class="nav-link"routerLink="/contact">{{ 'nav.contact' | translate}}</a>
           </li>
           <li class="nav-item dropdown" style="margin-right: 50px">
             <a
@@ -85,20 +85,22 @@
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              Set Lang
+              <span *ngIf="translate.currentLang == 'en'">English</span>
+              <span *ngIf="translate.currentLang == 'pl'">Polski</span>
             </a>
             <ul
               class="dropdown-menu dropdown-menu-dark"
               aria-labelledby="navbarDarkDropdownMenuLink"
+              style="max-width: 20px;"
             >
               <li>
                 <a class="dropdown-item" (click)="translate.use('pl')"
-                  >PL</a
+                  ><img src="assets/flags/pl.png"> Polski</a
                 >
               </li>
               <li>
                 <a class="dropdown-item" (click)="translate.use('en')"
-                  >EN</a
+                  ><img src="assets/flags/gb.png"> English</a
                 >
               </li>
             </ul>

@@ -1,3 +1,10 @@
 {
-    "title": "Tomasz Frączek - kompozytor instrumentalista"
+    "nav": {
+        "title": "Tomasz Frączek - kompozytor instrumentalista",
+        "about": "O sobie",
+        "music": "Muzyka",
+        "original-projects": "Projekty autorskie",
+        "custom-music": "Muzyka na zamówienie",
+        "contact": "Kontakt"
+    }
 }
