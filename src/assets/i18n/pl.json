@@ -6,5 +6,24 @@
         "original-projects": "Projekty autorskie",
         "custom-music": "Muzyka na zamówienie",
         "contact": "Kontakt"
+    },
+    "home": {
+
+    },
+    "about": {
+
+    },
+    "original-projects": {
+        "piano-solo": "Piano Solo to zbiór nastrojowych, romantycznych i nostalicznych ballad fortepianowych ze szczyptą refleksji",
+        "deep-blue": "Płyta łącząca brzmienia gitar, instrumentów etnicznych z brzmieniem fortepianu i przestrzennymi padami syntezatorów",
+        "words-and-tears": "Liryczna, melancholijna i nastrojowa ballada gitarowa ze smyczkami, padami oraz brzmieniem fortepianu w tle",
+        "listen": "Słuchaj na You Tube",
+        "unvailable": "Chwilowo niedostępna"
+    },
+    "custom-music": {
+
+    },
+    "contact": {
+
     }
 }

@@ -6,5 +6,24 @@
         "original-projects": "Original projects",
         "custom-music": "Custom music",
         "contact": "Contact"
+    },
+    "home": {
+
+    },
+    "about": {
+
+    },
+    "original-projects": {
+        "piano-solo": "Piano Solo is a collection of atmospheric, romantic and nostalgic piano ballads with a pinch of reflection",
+        "deep-blue": "The album combines the sounds of guitars, ethnic instruments with the sound of the piano and spatial synthesizer pads",
+        "words-and-tears": "Lyrical, melancholy and atmospheric guitar ballad with strings, pads and piano in the background",
+        "listen": "Listen on YT",
+        "unvailable": "Temporary unvailable"
+    },
+    "custom-music": {
+
+    },
+    "contact": {
+
     }
 }
