@@ -24,6 +24,13 @@
 
     },
     "contact": {
-
+        "title": "Kontakt",
+        "phone": "tel:",
+        "name": "Imię",
+        "email-protect": "Twój e-mail nie zostanie nikomu przekazany",
+        "message": "Twoja wiadomość",
+        "read": "Zapoznałem się z ",
+        "privacy": "polityką prywatności",
+        "send": "Wyślij"
     }
 }

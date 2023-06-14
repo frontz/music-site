@@ -1,39 +1,39 @@
 <div class="container">
     <div class="card mb-3">
       <div class="row">
-        <h3 class="text-center">Contact</h3>
-        <div class="col-sm-6 text-end fs-5" style="padding: 50px; text-shadow: 1px 2px lightgray">
-          tel: +48 667 258 932
+        <h3 class="text-center">{{ 'contact.title' | translate }}</h3>
+        <div class="col-sm-6 text-end fs-5" style="padding: 50px;">
+          {{ 'contact.phone' | translate }} +48 667 258 932
         </div>
-        <div class="col-sm-6 text-start fs-5" style="padding: 50px; text-shadow: 1px 2px lightgray">
+        <div class="col-sm-6 text-start fs-5" style="padding: 50px;">
           e-mail: tom.frontz@gmail.com
         </div>
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
-          <form id="form" method="post" action="send_email.php">
+          <form id="form" method="post">
             <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
+              <label for="name" class="form-label">{{ 'contact.name' | translate }}</label>
               <input type="text" class="form-control" name="name" id="name" aria-describedby="nameHelp" required minlength="3" />
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">E-mail</label>
               <input type="email" class="form-control" id="email" name="email" required />
               <div id="emailHelp" class="form-text">
-                Your address will not be passed on to anyone
+                {{ 'contact.email-protect' | translate }}
               </div>
             </div>
             <div class="mb-3">
-              <label for="message" class="form-label">Your message</label>
+              <label for="message" class="form-label">{{ 'contact.message' | translate }}</label>
               <textarea type="text" class="form-control" id="message" name="message" aria-describedby="messageHelp" required minlength="10"></textarea>
             </div>
             <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1" required />
-              <label class="form-check-label" for="exampleCheck1">I have read the
-                <a href="privacy.html" target="_blank">privacy policy</a>
+              <label class="form-check-label" for="exampleCheck1">{{ 'contact.read' | translate }}
+                <a href="privacy.html" target="_blank">{{ 'contact.privacy' | translate }}</a>
               </label>
             </div>
             <button type="submit" class="btn btn-primary" style="margin-bottom: 20px">
-              Send
+              {{ 'contact.send' | translate }}
             </button>
         </form>
         </div>

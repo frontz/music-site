@@ -24,6 +24,13 @@
 
     },
     "contact": {
-
+        "title": "Contact",
+        "phone": "phone:",
+        "name": "Name",
+        "email-protect": "Your e-mail will not send to anybody",
+        "message": "Your message",
+        "read": "I have read ",
+        "privacy": "privacy policy",
+        "send": "Send"
     }
 }
