@@ -15,7 +15,7 @@ import { OriginalProjectsComponent } from './pages/original-projects/original-pr
 import { CustomMusicComponent } from './pages/custom-music/custom-music.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
-  return new TranslateHttpLoader(httpClient);
+  return new TranslateHttpLoader(httpClient, "./assets/i18n/", ".json");
 }
 
 @NgModule({
