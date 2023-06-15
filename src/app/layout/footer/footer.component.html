@@ -5,30 +5,30 @@
   <div class="container">
     <div class="row">
       <div class="col-sm text-center">
-        Tomasz Frączek - kompozytor, instrumentalista<br />
+        {{ 'nav.title' | translate }}<br />
         <a href="mailto: tom.frontz@gmail.com" class="text-white"
         >tom.frontz@gmail.com</a
         >
       </div>
       <div class="col-sm text-center">
         <ul style="list-style-type: none">
-          <li>Navigation</li>
+          <li>{{ 'nav.navigation' | translate }}</li>
           <li class="small text-white">
-            <a routerLink="/about" class="text-white">O sobie</a>
+            <a routerLink="/about" class="text-white">{{ 'nav.about' | translate }}</a>
           </li>
           <li class="small text-white">
             <a routerLink="/original-projects" class="text-white"
-            >Projekty autorskie
+            >{{ 'nav.original-projects' | translate }}
             </a>
           </li>
 
           <li class="small text-white">
             <a routerLink="/custom-music" class="text-white"
-            >Muzyka na zamówienie</a
+            >{{ 'nav.custom-music' | translate }}</a
             >
           </li>
           <li class="small text-white">
-            <a routerLink="/contact" class="text-white">Kontakt</a>
+            <a routerLink="/contact" class="text-white">{{ 'nav.contact' | translate }}</a>
           </li>
         </ul>
       </div>

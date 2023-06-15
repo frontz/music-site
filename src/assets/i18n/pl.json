@@ -5,7 +5,8 @@
         "music": "Muzyka",
         "original-projects": "Projekty autorskie",
         "custom-music": "Muzyka na zamówienie",
-        "contact": "Kontakt"
+        "contact": "Kontakt",
+        "navigation": "Nawigacja"
     },
     "home": {
 
@@ -21,7 +22,8 @@
         "unvailable": "Chwilowo niedostępna"
     },
     "custom-music": {
-
+        "main-text": "Jako kompozytor-aranżer i producent muzyczny wykonuję różne projekty muzyczne, w stylu muzyki teatralnej i ilustracyjnej, film, orkiestra czy reklama. Dogrywam również utwory jako muzyk sesyjny, głównie jako gitarzysta elektryczny i gitarzysta flamenco. Ostateczne pliki audio spełniają wymagania wysokie wymagania techniczne w zakresie miksu i masteringu nagrania. Jestem osobą otwartą na współpracę, uważnie słucham sugestie i życzenia klienta, tak aby zamawiana przez niego muzyka była jak najbardziej zbliżona do jego wizji.",
+        "examples": "Poniżej kilka przykładów muzyki filmowej wykorzystującej wirtualne instrumenty symfoniczne, elektroniczne i inne."
     },
     "contact": {
         "title": "Kontakt",

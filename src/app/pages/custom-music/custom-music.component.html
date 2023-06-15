@@ -1,1 +1,44 @@
-<p>custom-music works!</p>
+<div class="container">
+    <div class="card">
+      <p style="padding: 20px">
+        {{ 'custom-music.main-text' | translate }}
+      </p>
+      <p style="padding-left: 20px">
+        {{ 'custom-music.examples' | translate }}
+      </p>
+      <div class="d-flex justify-content-center">
+        <video width="560" poster="../assets/thumbnails/lost_in_time.jpg" controls>
+          <source src="../assets/video/lost_in_time.mp4" type="video/mp4">
+          <source src="movie.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <hr />
+      <div class="d-flex justify-content-center">
+        <video width="560" poster="../assets/thumbnails/abiogenesis.jpg" controls>
+          <source src="../assets/video/abiogenesis.mp4" type="video/mp4">
+          <source src="movie.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <hr />
+      <div class="d-flex justify-content-center">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ybjFpOIXLYI"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <hr />
+      <div class="d-flex justify-content-center" style="padding-bottom: 20px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aD2ck_righ0" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen></iframe>
+      </div>
+  </div>
+  </div>

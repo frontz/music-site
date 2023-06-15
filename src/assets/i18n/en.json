@@ -5,7 +5,8 @@
         "music": "Music",
         "original-projects": "Original projects",
         "custom-music": "Custom music",
-        "contact": "Contact"
+        "contact": "Contact",
+        "navigation": "Navigation"
     },
     "home": {
 
@@ -21,7 +22,8 @@
         "unvailable": "Temporary unvailable"
     },
     "custom-music": {
-
+        "main-text": "As a composer-arranger and music producer, I perform various music projects, in the style of theatrical and illustrative music, film, orchestra or advertising. I also overdub tracks as a session musician, mainly as an electric guitar and flamenco guitarist. Final audio files satisfy high technical requirements in terms of mixing and mastering recordings. I am a person open to cooperation, I listen carefully suggestions and wishes of the client, so that the music he orders is as close as possible to his vision.",
+        "examples": "Below are some examples of film music using virtual symphonic, electronic and other instruments."
     },
     "contact": {
         "title": "Contact",
