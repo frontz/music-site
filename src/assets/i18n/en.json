@@ -33,6 +33,7 @@
         "message": "Your message",
         "read": "I have read ",
         "privacy": "privacy policy",
-        "send": "Send"
+        "send": "Send",
+        "success": "Message has been sent!"
     }
 }

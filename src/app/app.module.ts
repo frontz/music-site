@@ -13,6 +13,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { OriginalProjectsComponent } from './pages/original-projects/original-projects.component';
 import { CustomMusicComponent } from './pages/custom-music/custom-music.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient, "./assets/i18n/", ".json");
@@ -30,6 +31,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   ],
   imports: [
     BrowserModule, 
+    ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
     TranslateModule.forRoot({

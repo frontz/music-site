@@ -1,6 +1,6 @@
 <div class="container">
     <div class="card mb-3">
-      <div class="row">
+      <div class="row" [formGroup]="form">
         <h3 class="text-center">{{ 'contact.title' | translate }}</h3>
         <div class="col-sm-6 text-end fs-5" style="padding: 50px;">
           {{ 'contact.phone' | translate }} +48 667 258 932
@@ -10,21 +10,21 @@
         </div>
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
-          <form id="form" method="post">
+          <form id="form" method="post" action="javascript:void(0)" (submit)="send()">
             <div class="mb-3">
               <label for="name" class="form-label">{{ 'contact.name' | translate }}</label>
-              <input type="text" class="form-control" name="name" id="name" aria-describedby="nameHelp" required minlength="3" />
+              <input type="text" formControlName="from_name" class="form-control" name="name" id="name" aria-describedby="nameHelp" required minlength="3" />
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">E-mail</label>
-              <input type="email" class="form-control" id="email" name="email" required />
+              <input type="email" formControlName="from_email" class="form-control" id="email" name="email" required />
               <div id="emailHelp" class="form-text">
                 {{ 'contact.email-protect' | translate }}
               </div>
             </div>
             <div class="mb-3">
               <label for="message" class="form-label">{{ 'contact.message' | translate }}</label>
-              <textarea type="text" class="form-control" id="message" name="message" aria-describedby="messageHelp" required minlength="10"></textarea>
+              <textarea type="text" formControlName="message" class="form-control" id="message" name="message" aria-describedby="messageHelp" required minlength="10"></textarea>
             </div>
             <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1" required />
@@ -35,6 +35,7 @@
             <button type="submit" class="btn btn-primary" style="margin-bottom: 20px">
               {{ 'contact.send' | translate }}
             </button>
+            <p class="text-success" *ngIf="showSuccess">{{ 'contact.success' | translate }}</p>
         </form>
         </div>
       </div>
