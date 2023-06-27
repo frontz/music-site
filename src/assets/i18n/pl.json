@@ -35,5 +35,8 @@
         "privacy": "polityką prywatności",
         "send": "Wyślij",
         "success": "Wiadomość została wysłana!"
+    },
+    "privacy": {
+        "title": "Przeczytaj poniższy tekst, proszę"
     }
 }

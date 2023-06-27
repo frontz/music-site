@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import emailjs from '@emailjs/browser';
+declare var window: any;
 
 @Component({
   selector: 'app-contact',
@@ -19,6 +20,23 @@ export class ContactComponent {
   showSuccess = false;
 
   constructor(private fb: FormBuilder) {}
+
+  formModal: any;
+ 
+ 
+  ngOnInit(): void {
+    this.formModal = new window.bootstrap.Modal(
+      document.getElementById('myModal')
+    );
+  }
+ 
+  openFormModal() {
+    this.formModal.show();
+  }
+  saveSomeThing() {
+    // confirm or save something
+    this.formModal.hide();
+  }
 
   async send() {
     emailjs.init('B-B651oxVR21N8Q2h');

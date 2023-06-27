@@ -35,5 +35,8 @@
         "privacy": "privacy policy",
         "send": "Send",
         "success": "Message has been sent!"
+    },
+    "privacy": {
+        "title": "Read below text, please"
     }
 }
