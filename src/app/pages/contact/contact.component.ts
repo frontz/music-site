@@ -23,7 +23,6 @@ export class ContactComponent {
 
   formModal: any;
  
- 
   ngOnInit(): void {
     this.formModal = new window.bootstrap.Modal(
       document.getElementById('myModal')

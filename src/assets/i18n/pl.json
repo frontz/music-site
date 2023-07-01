@@ -8,11 +8,14 @@
         "contact": "Kontakt",
         "navigation": "Nawigacja"
     },
-    "home": {
-
-    },
     "about": {
-
+        "title": "O sobie",
+        "p1": "Jestem kompozytorem, aranżerem a także instrumentalistą. Muzyką pasjonuję się od najmłodszych lat i jest ona dla mnie niezwykle ważną częścią życia i wyrażania emocji. Interesowałem i interesuję się nadal wieloma gatunkami muzycznymi, co pozwala mi poruszać się w różnorodnej stylistyce oraz komponować i aranżować utwory o dowolnym przeznaczeniu, składzie instrumentalnym i estetyce. Jako instrumentalista gram na gitarze elektrycznej, akustycznej i flamenco, a także na fortepianie i innych instrumentach klawiszowych. Żywo interesuję się możliwościami, brzmieniem i artykulacją gry instrumentów orkiestrowych czy etnicznych.",
+        "p2": "W swojej muzyce łączę brzmienia gitar z nowoczesnymi brzmieniami systezatorów i elektronicznymi loopami, co wg mojego odczucia nadaje muzyce przestrzeni i nowoczesnej pulsacji. Zachęcam do zapoznania się z moją twórczością, a jeśli spodoba Ci się muzyka, będzie mi miło. Jeśli chcesz nawiązać współpracę, zamówić utwór, aranżację bądź dogranie partii solowej, możesz napisać lub zadzwonić.",
+        "p3-before-link": "Tworzę, aranżuję i wykonuję muzykę o charakterze ilustracyjnym, filmowym, orkiestrowym i elektronicznym, jak większość dzisiejszych producentów muzycznych w głównej mierze korzystam z techniki samplingu, wirtualnych syntezatorów ale też instrumentów fizycznych - gitar elektrycznych, gitary klasycznej oraz tradycyjnych instrumentów klawiszowych. Niekiedy zapraszam do nagrań muzyków sesyjnych. Grywam recitale z muzyką gitarową, tworzę muzykę na potrzeby spektakli teatralnych, reaklam, filmów i prezentacji. Część mojego porfolio muzycznego możesz znaleźć na podstronie",
+        "p3-link": "Muzyka na zamówienie",
+        "p3-after-link": ", gdzie umieściłem kilka przykładowych kompozycji.",
+        "p4": "Na stronie obok przykładów muzycznych realizowanych na zlecenie, znajdziesz nagrania z albumów - Piano Solo - będącym zbiorem lirycznych fortepianowych ballad, Deep Blue - ostatnio wydanego albumu - będącego instrumentalnym albumem łączącym brzmienie fortepianu i gitar z dźwiękami instrumentów etnicznych oraz elektronicznymi teksturami. Z kolei singiel Words & Tears to gitarowa ballada."
     },
     "original-projects": {
         "piano-solo": "Piano Solo to zbiór nastrojowych, romantycznych i nostalicznych ballad fortepianowych ze szczyptą refleksji",
@@ -37,6 +40,41 @@
         "success": "Wiadomość została wysłana!"
     },
     "privacy": {
-        "title": "Przeczytaj poniższy tekst, proszę"
+        "title": "Przeczytaj, proszę, poniższy tekst",
+        "privacy": "Polityka prywatności",
+        "I-title": " Postanowienia ogólne",
+        "I-li1": "Polityka prywatności określa, jak zbierane, przetwarzane i przechowywane są dane osobowe Użytkowników niezbędne do świadczenia usług drogą elektroniczną za pośrednictwem serwisu internetowego http://tomaszfraczek.com (dalej: Serwis).",
+        "I-li2": "Serwis zbiera wyłącznie dane osobowe niezbędne do świadczenia i rozwoju usług w nim oferowanych.",
+        "I-li3": "Dane osobowe zbierane za pośrednictwem Serwisu są przetwarzane zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (ogólne rozporządzenie o ochronie danych, dalej RODO) oraz ustawą o ochronie danych osobowych z dnia 10 maja 2018 r.",
+        "II-title": "Administrator danych",
+        "II-p": "Administratorem danych osobowych zbieranych poprzez Serwis jest Be Inspired – Tomasz Frączek, adres: Osiedle 1640/2, Rakszawa, NIP: 815-150-34-30, REGON: 365965281, adres poczty elektronicznej: tom.frontz@gmail.com (dalej: Administrator).",
+        "III-title": "Cel zbierania danych osobowych",
+        "III-p": "Dane osobowe wykorzystywane są w celu:",
+        "III-li1": "Komunikacji z Użytkownikiem poprzez formularz kontaktowy.",
+        "III-li2": "Podanie danych jest dobrowolne, ale niezbędne do zawarcia umowy albo skorzystania z innych funkcjonalności Serwisu.",
+        "IV-title": "Rodzaj przetwarzanych danych osobowych",
+        "IV-p": "Administrator może przetwarzać dane osobowe Użytkownika: imię i nazwisko oraz adres e-mail.",
+        "V-title": "Okres przetwarzania danych osobowych",
+        "V-p": "Dane osobowe Użytkowników będą przetwarzane przez okres:",
+        "V-li1": "Gdy podstawą przetwarzania danych jest wykonanie umowy – do momentu przedawnienia roszczeń po jej wykonaniu.",
+        "V-li2": "Gdy podstawą przetwarzania danych jest zgoda – do momentu jej odwołania, a po odwołaniu zgody do przedawnienia roszczeń.",
+        "V-p2": "W obu przypadkach termin przedawnienia wynosi 6 lat, a dla roszczeń o świadczenia okresowe i roszczeń dotyczących prowadzenia działalności gospodarczej.",
+        "VI-title": "Udostępnianie danych osobowych",
+        "VI-li1": "Dane osobowe Użytkowników mogą być przekazywane: podmiotom powiązanym z Administratorem, jego podwykonawcom, podmiotom współpracującym z Administratorem np. firmom obsługującym e-płatności, firmom świadczącym usługi kurierskie/pocztowe, kancelariom prawnym.",
+        "VI-li2": "Dane osobowe Użytkowników nie będą przekazywane poza teren Europejskiego Obszaru Gospodarczego (EOG).",
+        "VII-title": "Prawa Użytkowników",
+        "VII-li1": "Użytkownik Serwisu ma prawo do: dostępu do treści swoich danych osobowych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia, wniesienia sprzeciwu wobec przetwarzania, cofnięcia zgody w każdej chwili (co nie ma wpływu na zgodność z prawem przetwarzania dokonanego w oparciu o zgodę przed jej cofnięciem).",
+        "VII-li2": "Zgłoszenie o wystąpieniu przez Użytkownika z uprawnieniem wynikającym z wymienionych praw należy przesłać na adres tom.frontz@gmail.com.",
+        "VII-li3": "Administrator spełnia lub odmawia spełnienia żądania niezwłocznie – maksymalnie w ciągu miesiąca od jego otrzymania.",
+        "VII-li4": "Użytkownik ma prawo złożyć skargę do Prezesa Urzędu Ochrony Danych Osobowych, jeśli uzna, że przetwarzanie narusza jego prawa i wolności (RODO).",
+        "VIII-title": "Zautomatyzowane podejmowanie decyzji i profilowanie",
+        "VIII-l1": "Dane Użytkowników nie mogą być przetwarzane w zautomatyzowany sposób tak, że na skutek tego mogłyby zapaść wobec nich jakiekolwiek decyzje.",
+        "VIII-l2": "Dane Użytkowników mogą być profilowane celem dostosowania treści i personalizacji oferty po wyrażeniu przez nich zgody.",
+        "IX-title": "Postanowienia końcowe",
+        "IX-li1": "Administrator ma prawo do wprowadzenia zmian w Polityce prywatności, przy czym prawa Użytkowników nie zostaną ograniczone.",
+        "IX-li2": "Informacja o wprowadzonych zmianach pojawi się w formie komunikatu dostępnego w Serwisie.",
+        "IX-li3": "W sprawach nieuregulowanych w niniejszej Polityce prywatności obowiązują przepisy RODO i przepisy prawa polskiego.",
+        "IX-before-link": "Informacje na temat polityki prywatności i plików cookies znajdziesz na",
+        "close": "Close"
     }
 }

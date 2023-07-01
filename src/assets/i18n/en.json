@@ -8,11 +8,15 @@
         "contact": "Contact",
         "navigation": "Navigation"
     },
-    "home": {
 
-    },
     "about": {
-
+        "title": "About me",
+        "p1": "I am a composer, arranger and instrumentalist. Music I am passionate about it from an early age and it is extremely important to me an important part of living and expressing emotions. I was interested and I am still interested in many music genres, which allows me move in a variety of styles and compose and arrange songs of any purpose, composition instrumental and aesthetic. As an instrumentalist, I play on electric, acoustic and flamenco guitars, as well as on piano and other keyboard instruments. I am keenly interested possibilities, sound and articulation of playing instruments orchestral or ethnic.",
+        "p2": "In my music I combine the sounds of guitars with modern sounds synthesizers and electronic loops, which in my opinion gives the music space and modern pulsation. I encourage to get acquainted with my work, and if you like it music will be nice. If you want to cooperate, order a song, arrangement or overdubbing of a solo part, you can write or call.", 
+        "p3-before-link": "I create, arrange and perform illustrative music, film, orchestral and electronic like most of today's music producers I mainly use techniques of sampling, virtual synthesizers but also physical instruments - electric guitars, classical guitar and traditional keyboard instruments. Sometimes I invite you for session musicians. I play recitals with guitar music, I create music for theatrical performances, commercials and films and presentation. You can find part of my music portfolio on the subpage",
+        "p3-link": "Custom Music",
+        "p3-after-link": ", where I have included some sample compositions.",
+        "p4": "On the page, next to music examples made to order, you will find recordings from albums - Piano Solo - a collection of lyrical piano pieces ballad, Deep Blue - recently released album - being instrumental album combining the sound of piano and guitars with sounds of ethnic and electronic instruments textures. In turn, the single Words & Tears is a guitar one ballade."        
     },
     "original-projects": {
         "piano-solo": "Piano Solo is a collection of atmospheric, romantic and nostalgic piano ballads with a pinch of reflection",
@@ -37,6 +41,41 @@
         "success": "Message has been sent!"
     },
     "privacy": {
-        "title": "Read below text, please"
+        "title": "Read below text, please",
+        "privacy": "Privacy policy",
+        "I-title": "General provisions",
+        "I-li1": "The privacy policy defines how Users' personal data is collected, processed and stored necessary for providing services electronically via the website http://tomaszfraczek.com (hereinafter: the Website).",
+        "I-li2": "The website collects only personal data necessary to provide and develop the services offered on it.",
+        "I-li3": "Personal data collected via the Website are processed in accordance with the Regulation of the European Parliament and of the Council (EU) 2016/679 of 27 April 2016 on the protection of individuals with regard to the processing of personal data and on the free movement of such data and repealing Directive 95/46/EC (General Data Protection Regulation, hereinafter referred to as GDPR) and the Personal Data Protection Act of May 10, 2018.",
+        "II-title": "Data administrator",
+        "II-p": "The administrator of personal data collected through the Website is Be Inspired - Tomasz Frączek, address: Osiedle 1640/2, Rakszawa, NIP: 815-150-34-30, REGON: 365965281, e-mail address: tom.frontz@gmail.com (hereinafter: Administrator).",
+        "III-title": "Purpose of collecting personal data",
+        "III-p": "Personal data is used for the purpose of:",
+        "III-li1": "Communication with the User via the contact form.",
+        "III-li2": "Providing data is voluntary, but necessary to conclude a contract or use other functionalities of the Website.",
+        "IV-title": "Type of personal data processed",
+        "IV-p": "The Administrator may process the User's personal data: name and surname and e-mail address.",
+        "V-title": "Type of personal data processed",
+        "V-p": "Users' personal data will be processed for the period of:",
+        "V-li1": "When the basis for data processing is the performance of the contract - until the statute of limitations for claims after its performance.",
+        "V-li2": "When the basis for data processing is consent - until its revocation, and after revocation of consent until the limitation of claims.",
+        "V-p2": "In both cases, the limitation period is 6 years, and for claims for periodic benefits and claims related to running a business - 3 years (unless a special provision provides otherwise).",
+        "VI-title": "Sharing personal data",
+        "VI-li1": "Users' personal data may be transferred to: entities related to the Administrator, its subcontractors, entities cooperating with the Administrator e.g. companies that support e-payments, companies providing courier/postal services, law firms.",
+        "VI-li2": "Users' personal data will not be transferred outside the European Economic Area (EEA).",
+        "VII-title": "User Rights",
+        "VII-li1": "The Website User has the right to: access their personal data, rectify it, delete it, limit processing, transfer, object to processing, withdraw consent at any time (which does not affect the lawfulness of processing made on the basis of consent before its withdrawal).",
+        "VII-li2": "A notification about the User's withdrawal from the rights resulting from the above-mentioned rights should be sent to the address tom.frontz@gmail.com.",
+        "VII-li3": "The administrator fulfills or refuses to fulfill the request immediately - within a maximum of one month from its receipt.",
+        "VII-li4": "The user has the right to submit a complaint to the President of the Office for Personal Data Protection if he considers that the processing violates his rights and freedoms (GDPR).",
+        "VIII-title": "Automated decision making and profiling",
+        "VIII-l1": "Users' data may not be processed in an automated manner so that any decisions could be made against them.",
+        "VIII-l2": "Users' data may be profiled in order to adjust the content and personalize the offer after their consent.",
+        "IX-title": "Final Provisions",
+        "IX-li1": "The Administrator has the right to make changes to the Privacy Policy, but the Users' rights will not be limited.",
+        "IX-li2": "Information about the introduced changes will appear in the form of a message available on the Website.",
+        "IX-li3": "In matters not covered by this Privacy Policy, the provisions of the GDPR and the provisions of Polish law apply.",
+        "IX-before-link": "Information on the privacy policy and cookies can be found at",
+        "close": "Close"
     }
 }
