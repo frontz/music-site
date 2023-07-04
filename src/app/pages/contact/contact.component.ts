@@ -14,7 +14,8 @@ export class ContactComponent {
     from_name: '',
     to_name: 'Admin',
     from_email: '',
-    message: ''
+    message: '',
+    confirm: false
   });
 
   showSuccess = false;
@@ -38,15 +39,17 @@ export class ContactComponent {
   }
 
   async send() {
-    emailjs.init('B-B651oxVR21N8Q2h');
-    let response = await emailjs.send("service_rto7y6e","template_vek5im4",{
-    from_name: this.form.value.from_name,
-    to_name: "Tomasz",
-    from_email: this.form.value.from_email,
-    message: this.form.value.message,
-  });
-  this.showSuccess = true;
-  this.form.reset();
+    if (this.form.valid) {
+      emailjs.init('B-B651oxVR21N8Q2h');
+      let response = await emailjs.send("service_rto7y6e","template_vek5im4",{
+      from_name: this.form.value.from_name,
+      to_name: "Tomasz",
+      from_email: this.form.value.from_email,
+      message: this.form.value.message,
+    });
+    this.showSuccess = true;
+    this.form.reset();
+    }
   }
 
 }
