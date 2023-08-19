@@ -1,5 +1,5 @@
 .container {
-    height: 50rem;
+    min-height: 50rem;
 }
 .card {
     margin: 25px;
