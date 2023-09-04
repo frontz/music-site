@@ -12,11 +12,11 @@
     "about": {
         "title": "About me",
         "p1": "I am a composer, arranger and instrumentalist. Music I am passionate about it from an early age and it is extremely important to me an important part of living and expressing emotions. I was interested and I am still interested in many music genres, which allows me move in a variety of styles and compose and arrange songs of any purpose, composition instrumental and aesthetic. As an instrumentalist, I play on electric, acoustic and flamenco guitars, as well as on piano and other keyboard instruments. I am keenly interested possibilities, sound and articulation of playing instruments orchestral or ethnic.",
-        "p2": "In my music I combine the sounds of guitars with modern sounds synthesizers and electronic loops, which in my opinion gives the music space and modern pulsation. I encourage to get acquainted with my work, and if you like it music will be nice. If you want to cooperate, order a song, arrangement or overdubbing of a solo part, you can write or call.", 
+        "p2": "In my music I combine the sounds of guitars with modern sounds synthesizers and electronic loops, which in my opinion gives the music space and modern pulsation. I encourage to get acquainted with my work, and if you like it music will be nice. If you want to cooperate, order a song, arrangement or overdubbing of a solo part, you can write or call.",
         "p3-before-link": "I create, arrange and perform illustrative music, film, orchestral and electronic like most of today's music producers I mainly use techniques of sampling, virtual synthesizers but also physical instruments - electric guitars, classical guitar and traditional keyboard instruments. Sometimes I invite you for session musicians. I play recitals with guitar music, I create music for theatrical performances, commercials and films and presentation. You can find part of my music portfolio on the subpage",
         "p3-link": "Custom Music",
         "p3-after-link": ", where I have included some sample compositions.",
-        "p4": "On the page, next to music examples made to order, you will find recordings from albums - Piano Solo - a collection of lyrical piano pieces ballad, Deep Blue - recently released album - being instrumental album combining the sound of piano and guitars with sounds of ethnic and electronic instruments textures. In turn, the single Words & Tears is a guitar one ballade."        
+        "p4": "On the page, next to music examples made to order, you will find recordings from albums - Piano Solo - a collection of lyrical piano pieces ballad, Deep Blue - recently released album - being instrumental album combining the sound of piano and guitars with sounds of ethnic and electronic instruments textures. In turn, the single Words & Tears is a guitar one ballade."
     },
     "original-projects": {
         "piano-solo": "Piano Solo is a collection of atmospheric, romantic and nostalgic piano ballads with a pinch of reflection",
@@ -38,7 +38,11 @@
         "read": "I have read ",
         "privacy": "privacy policy",
         "send": "Send",
-        "success": "Message has been sent!"
+        "success": "Message has been sent!",
+        "nameError": "Please, enter your name!",
+        "emailError": "Please, enter a valid email address!",
+        "messageError": "Please, enter a message!",
+        "confirmError": "The field is required!"
     },
     "privacy": {
         "title": "Read below text, please",

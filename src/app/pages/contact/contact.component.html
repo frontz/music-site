@@ -14,6 +14,7 @@
             <div class="mb-3">
               <label for="name" class="form-label">{{ 'contact.name' | translate }}</label>
               <input type="text" formControlName="from_name" class="form-control" name="name" id="name" aria-describedby="nameHelp" required minlength="3" />
+              <p class="text-danger" *ngIf="showNameError">{{ 'contact.nameError' | translate }}</p>
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">E-mail</label>
@@ -21,17 +22,19 @@
               <div id="emailHelp" class="form-text">
                 {{ 'contact.email-protect' | translate }}
               </div>
+              <p class="text-danger" *ngIf="showEmailError">{{ 'contact.emailError' | translate }}</p>
             </div>
             <div class="mb-3">
               <label for="message" class="form-label">{{ 'contact.message' | translate }}</label>
               <textarea type="text" formControlName="message" class="form-control" id="message" name="message" aria-describedby="messageHelp" required minlength="10"></textarea>
+              <p class="text-danger" *ngIf="showMessageError">{{ 'contact.messageError' | translate }}</p>
             </div>
             <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" formControlName="confirm" id="confirm" name="confirm" required /> 
-              <label class="form-check-label" for="exampleCheck1">{{ 'contact.read' | translate }}
+              <input type="checkbox" class="form-check-input" formControlName="confirm" id="confirm" name="confirm" required />
+              <label class="form-check-label" for="confirm">{{ 'contact.read' | translate }}
                 <a (click)="openFormModal()" style="cursor: pointer; color: blue;">{{ 'contact.privacy' | translate }}</a>
               </label>
-               
+              <p class="text-danger" *ngIf="showConfirmationError">{{ 'contact.confirmError' | translate }}</p>
               <!--form modal-->
               <div
                 class="modal fade"
@@ -62,17 +65,17 @@
                       </ul>
 
                       <h4>II. {{ 'privacy.II-title' | translate}}</h4>
-                      <p>   
+                      <p>
                         {{ 'privacy.II-p' | translate}}
                       </p>
 
                       <h4>III. {{ 'privacy.III-title' | translate}}</h4>
                       <p>{{ 'privacy.III-p' | translate}}</p>
                       <ul>
-                        <li>	
+                        <li>
                           {{ 'privacy.III-li1' | translate}}
                         </li>
-                        <li>	
+                        <li>
                           {{ 'privacy.III-li2' | translate}}
                         </li>
                       </ul>
@@ -119,7 +122,7 @@
                                 <li>{{ 'privacy.IX-li3' | translate}}</li>
                             </ul>{{ 'privacy.IX-before-link' | translate}} <a href="https://www.wygranaonline.com/polityka-prywatnosci-wzor-generator/" target="_blank">Wygrana online</a>
                     </div>
-                    
+
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                         {{ 'privacy.close' | translate }}
@@ -129,11 +132,11 @@
                 </div>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary" style="margin-bottom: 20px">
+            <button type="submit" class="btn btn-primary" style="margin-bottom: 20px" (click)="checkValidation()">
               {{ 'contact.send' | translate }}
             </button>
             <p class="text-success" *ngIf="showSuccess">{{ 'contact.success' | translate }}</p>
-        </form>      
+        </form>
         </div>
       </div>
     </div>

@@ -19,23 +19,46 @@ export class ContactComponent {
   });
 
   showSuccess = false;
+  showNameError = false;
+  showEmailError = false;
+  showMessageError = false;
+  showConfirmationError = false;
 
   constructor(private fb: FormBuilder) {}
 
   formModal: any;
- 
+
   ngOnInit(): void {
     this.formModal = new window.bootstrap.Modal(
       document.getElementById('myModal')
     );
   }
- 
+
   openFormModal() {
     this.formModal.show();
   }
   saveSomeThing() {
     // confirm or save something
     this.formModal.hide();
+  }
+
+  checkValidation() {
+    this.showNameError = false;
+    this.showEmailError = false;
+    this.showMessageError = false;
+    this.showConfirmationError = false;
+    if (this.form.controls['from_name']?.invalid) {
+      this.showNameError = true;
+    }
+    if (this.form.controls['from_email']?.invalid) {
+      this.showEmailError = true;
+    }
+    if (this.form.controls['message']?.invalid) {
+      this.showMessageError = true;
+    }
+    if (this.form.controls['confirm']?.invalid) {
+      this.showConfirmationError = true;
+    }
   }
 
   async send() {
