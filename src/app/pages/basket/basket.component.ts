@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Album} from "../../models/album.model";
 
 @Component({
   selector: 'app-basket',
@@ -7,6 +8,6 @@ import { Component } from '@angular/core';
 })
 export class BasketComponent {
 
-  items = [];
+  items: Album[] = [];
 
 }
