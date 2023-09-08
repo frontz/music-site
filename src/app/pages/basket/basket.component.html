@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="card mb-3">
+    <div class="row">
+      <h3 class="text-center">{{ 'basket.title' | translate }}</h3>
+      <p *ngIf="items.length > 0; else noProducts">Masz {{ items.length }} produkty w koszyku.</p>
+      <ng-template #noProducts>
+        <p>{{ 'basket.noProducts' | translate }}</p>
+      </ng-template>
+    </div>
+  </div>
+</div>
