@@ -13,9 +13,8 @@
             <p class="card-text">
                 {{ 'original-projects.piano-solo' | translate}}
             </p>
-            <a href="#" class="btn btn-primary disabled"
-              >{{ 'original-projects.unvailable' | translate}}</a
-            >
+
+            <button class="btn btn-primary" (click)="addAlbum(1, 'Piano Solo', 9.50)" [disabled]="isAlbumAdded(1)">{{ 'basket.add' | translate }}</button>
           </div>
         </div>
       </div>
@@ -32,12 +31,7 @@
             <p class="card-text">
                 {{ 'original-projects.deep-blue' | translate}}
             </p>
-            <a
-              href="https://www.youtube.com/watch?v=vUjWlBub8nA&list=OLAK5uy_mfr_rubTXtnoyWACdsNjuLnxyCRYrz5p8"
-              class="btn btn-primary"
-              target="_blank"
-              >{{ 'original-projects.listen' | translate}}</a
-            >
+            <button class="btn btn-primary" (click)="addAlbum(2, 'Deep Blue', 10.50)" [disabled]="isAlbumAdded(2)">{{ 'basket.add' | translate }}</button>
           </div>
         </div>
       </div>
@@ -52,14 +46,9 @@
           <div class="card-body">
             <h5 class="card-title">Words & Tears</h5>
             <p class="card-text">
-                {{ 'original-projects.words-and-tears' | translate}}
+                {{ 'original-projects.words-and-tears' | translate }}
             </p>
-            <a
-              href="https://www.youtube.com/watch?v=uSSazAhaJsI"
-              class="btn btn-primary"
-              target="_blank"
-              >{{ 'original-projects.listen' | translate}}</a
-            >
+            <button class="btn btn-primary" (click)="addAlbum(3, 'Words & Tears', 1.90)" [disabled]="isAlbumAdded(3)">{{ 'basket.add' | translate }}</button>
           </div>
         </div>
       </div>

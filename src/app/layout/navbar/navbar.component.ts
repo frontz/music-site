@@ -1,5 +1,6 @@
 import {Component } from '@angular/core';
 import {TranslateService} from "@ngx-translate/core";
+import {BasketService} from "../../services/basket.service";
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +8,13 @@ import {TranslateService} from "@ngx-translate/core";
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  constructor(public translate: TranslateService) {
+  constructor(public translate: TranslateService, private basket: BasketService) {
     translate.setDefaultLang('en');
     translate.use('en');
+  }
+
+  numberOfItems(): number {
+    return this.basket.getItems().length;
   }
 
 }

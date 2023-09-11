@@ -32,7 +32,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     BasketComponent,
   ],
   imports: [
-    BrowserModule, 
+    BrowserModule,
     ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
