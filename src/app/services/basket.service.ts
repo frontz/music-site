@@ -6,7 +6,17 @@ import {Album} from "../models/album.model";
 })
 export class BasketService {
 
+  albums: Album[] = [
+    {id: 1, title: "Piano Solo", pathToImg: "assets/piano-solo.jpg", description: "original-projects.piano-solo", price: 9.50},
+    {id: 2, title: "Deep Blue", pathToImg: "assets/deep-blue.jpg", description: "original-projects.deep-blue", price: 10.50},
+    {id: 3, title: "Words & Tears", pathToImg: "assets/words&tears.jpg", description: "original-projects.words-and-tears", price: 1.90}
+  ];
+
   selectedItems: Album[] = [];
+
+  getAlbums() {
+    return this.albums;
+  }
 
   getItems() {
     return this.selectedItems;
@@ -17,9 +27,8 @@ export class BasketService {
     console.log(this.selectedItems);
   }
 
-  removeItem(album: Album) {
-    this.selectedItems.filter(e => !album);
-    console.log(this.selectedItems);
+  removeItem(id: number) {
+    this.selectedItems = this.selectedItems.filter(album => album.id !== id);
   }
 
   clearItems() {

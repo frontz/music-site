@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {BasketService} from "../../services/basket.service";
 import {Album} from "../../models/album.model";
 
@@ -7,13 +7,23 @@ import {Album} from "../../models/album.model";
   templateUrl: './original-projects.component.html',
   styleUrls: ['./original-projects.component.css']
 })
-export class OriginalProjectsComponent {
+export class OriginalProjectsComponent implements OnInit {
+
+  albums: Album[] = [];
 
   constructor(private basket: BasketService) {
   }
 
-  addAlbum(id: number, title: string, price: number) {
-    this.basket.addItem({id, title, price});
+  ngOnInit() {
+    this.albums = this.basket.getAlbums();
+  }
+
+  getAlbums() {
+    return this.basket.getItems();
+  }
+
+  addAlbum(album: Album) {
+    this.basket.addItem(album);
   }
 
   isAlbumAdded(id: number) {

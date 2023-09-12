@@ -1,57 +1,24 @@
 <div class="container" style="height: 42rem">
     <div class="row">
 
-      <div class="col-sm-4">
+      <div class="col-sm-4" *ngFor="let album of albums">
         <div class="card text-center">
           <img
-            src="assets/piano-solo.jpg"
+            src="{{ album.pathToImg }}"
             class="card-img-top"
             alt="..."
           />
           <div class="card-body">
-            <h5 class="card-title">Piano Solo</h5>
+            <h5 class="card-title">{{ album.title }}</h5>
             <p class="card-text">
-                {{ 'original-projects.piano-solo' | translate}}
+                {{ album.description | translate}}
             </p>
 
-            <button class="btn btn-primary" (click)="addAlbum(1, 'Piano Solo', 9.50)" [disabled]="isAlbumAdded(1)">{{ 'basket.add' | translate }}</button>
+            <button class="btn btn-primary" (click)="addAlbum(album)" [disabled]="isAlbumAdded(album.id)">{{ 'basket.add' | translate }}</button>
           </div>
         </div>
       </div>
 
-      <div class="col-sm-4">
-        <div class="card text-center">
-          <img
-            src="assets/deep-blue.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Deep Blue</h5>
-            <p class="card-text">
-                {{ 'original-projects.deep-blue' | translate}}
-            </p>
-            <button class="btn btn-primary" (click)="addAlbum(2, 'Deep Blue', 10.50)" [disabled]="isAlbumAdded(2)">{{ 'basket.add' | translate }}</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4">
-        <div class="card text-center">
-          <img
-            src="assets/words&tears.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Words & Tears</h5>
-            <p class="card-text">
-                {{ 'original-projects.words-and-tears' | translate }}
-            </p>
-            <button class="btn btn-primary" (click)="addAlbum(3, 'Words & Tears', 1.90)" [disabled]="isAlbumAdded(3)">{{ 'basket.add' | translate }}</button>
-          </div>
-        </div>
-      </div>
       <div class="col-sm"></div>
     </div>
   </div>

@@ -1,11 +1,19 @@
 <div class="container">
-  <div class="card mb-3">
     <div class="row">
       <h3 class="text-center">{{ 'basket.title' | translate }}</h3>
-      <p *ngIf="items.length > 0; else noProducts">Masz {{ items.length }} produkty w koszyku.</p>
-      <ng-template #noProducts>
-        <p>{{ 'basket.noProducts' | translate }}</p>
-      </ng-template>
+      <table class="table">
+        <tbody>
+        <tr *ngFor="let item of items; let i = index">
+          <th scope="row">{{ i + 1 }}</th>
+          <td><img src="{{ item.pathToImg }}" style="width: 60px" alt="Album cover"> </td>
+          <td><strong>{{ item.title }}</strong></td>
+          <td>{{ item.price | currency }}</td>
+          <td><button class="btn btn-close" (click)="removeAlbum(item.id)"></button></td>
+        </tr>
+        </tbody>
+      </table>
+
+      <p *ngIf="items.length === 0">{{ 'basket.noProducts' | translate }}</p>
+
     </div>
-  </div>
 </div>

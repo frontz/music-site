@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Album} from "../../models/album.model";
 import {BasketService} from "../../services/basket.service";
 
@@ -7,14 +7,22 @@ import {BasketService} from "../../services/basket.service";
   templateUrl: './basket.component.html',
   styleUrls: ['./basket.component.css']
 })
-export class BasketComponent {
+export class BasketComponent implements OnInit {
+
+  items: Album[] = [];
 
   constructor(private basket: BasketService) {
   }
 
-  addAlbum(album: Album) {
-    this.basket.addItem(album);
+  ngOnInit() {
+    this.items = this.basket.getItems();
+    console.log(this.items);
   }
 
-  items: Album[] = [];
+  removeAlbum(id: number) {
+    this.basket.removeItem(id);
+    this.items = this.basket.getItems();
+  }
+
+
 }
