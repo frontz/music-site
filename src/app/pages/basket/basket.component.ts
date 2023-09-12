@@ -22,6 +22,11 @@ export class BasketComponent implements OnInit {
   removeAlbum(id: number) {
     this.basket.removeItem(id);
     this.items = this.basket.getItems();
+    this.getTotalPrice();
+  }
+
+  getTotalPrice() {
+    return this.basket.totalPrice();
   }
 
 

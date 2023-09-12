@@ -40,4 +40,12 @@ export class BasketService {
     return !!this.selectedItems.find(e => e.id === id);
   }
 
+  totalPrice() {
+    let price = 0;
+    for (let i = 0; i < this.selectedItems.length; i++) {
+      price += this.selectedItems[i].price;
+    }
+    return price;
+  }
+
 }

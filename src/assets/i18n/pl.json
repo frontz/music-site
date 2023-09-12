@@ -46,7 +46,8 @@
   "basket": {
     "title": "Twoje zamówienie",
     "noProducts": "Brak zamówionych produktów",
-    "add": "Do koszyka"
+    "add": "Do koszyka",
+    "cash": "Do kasy"
   },
     "privacy": {
         "title": "Przeczytaj, proszę, poniższy tekst",
