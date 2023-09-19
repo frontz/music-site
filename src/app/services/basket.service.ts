@@ -19,16 +19,24 @@ export class BasketService {
   }
 
   getItems() {
-    return this.selectedItems;
+    let items = localStorage.getItem("items");
+    if (items !== null) {
+      console.log(JSON.parse(items));
+      this.selectedItems = JSON.parse(items);
+      return this.selectedItems;
+    }
+    return [];
   }
 
   addItem(album: Album) {
     this.selectedItems.push(album);
-    console.log(this.selectedItems);
+    localStorage.setItem("items", JSON.stringify(this.selectedItems));
+    // console.log(this.selectedItems);
   }
 
   removeItem(id: number) {
     this.selectedItems = this.selectedItems.filter(album => album.id !== id);
+    localStorage.setItem("items", JSON.stringify(this.selectedItems));
   }
 
   clearItems() {

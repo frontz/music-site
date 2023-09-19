@@ -16,7 +16,7 @@ export class BasketComponent implements OnInit {
 
   ngOnInit() {
     this.items = this.basket.getItems();
-    console.log(this.items);
+    this.basket.getItems();
   }
 
   removeAlbum(id: number) {

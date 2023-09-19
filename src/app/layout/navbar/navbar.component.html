@@ -78,7 +78,7 @@
           </li>
           <li class="nav-item" >
             <a class="nav-link" routerLink="/basket">
-            <i class="bi bi-basket3-fill"></i> - {{ numberOfItems() }}
+              <i class="bi bi-basket3-fill"></i> - <span [ngStyle]="{ 'color': getNumberOfItems() > 0 ? 'dodgerblue' : null}">{{ getNumberOfItems() }}</span>
             </a>
           </li>
           <li class="nav-item dropdown" style="margin-right: 50px">
