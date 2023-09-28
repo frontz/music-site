@@ -18,10 +18,6 @@ export class OriginalProjectsComponent implements OnInit {
     this.albums = this.basket.getAlbums();
   }
 
-  getAlbums() {
-    return this.basket.getItems();
-  }
-
   addAlbum(album: Album) {
     this.basket.addItem(album);
   }

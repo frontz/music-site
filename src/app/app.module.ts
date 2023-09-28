@@ -1,10 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
-
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { FooterComponent } from './layout/footer/footer.component';
@@ -15,6 +13,7 @@ import { OriginalProjectsComponent } from './pages/original-projects/original-pr
 import { CustomMusicComponent } from './pages/custom-music/custom-music.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BasketComponent } from './pages/basket/basket.component';
+import { StripePaymentComponent } from './pages/stripe-payment/stripe-payment.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient, "./assets/i18n/", ".json");
@@ -30,6 +29,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     OriginalProjectsComponent,
     CustomMusicComponent,
     BasketComponent,
+    StripePaymentComponent
   ],
   imports: [
     BrowserModule,
