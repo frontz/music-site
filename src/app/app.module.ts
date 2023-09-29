@@ -13,7 +13,6 @@ import { OriginalProjectsComponent } from './pages/original-projects/original-pr
 import { CustomMusicComponent } from './pages/custom-music/custom-music.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BasketComponent } from './pages/basket/basket.component';
-import { StripePaymentComponent } from './pages/stripe-payment/stripe-payment.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient, "./assets/i18n/", ".json");
@@ -28,8 +27,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     ContactComponent,
     OriginalProjectsComponent,
     CustomMusicComponent,
-    BasketComponent,
-    StripePaymentComponent
+    BasketComponent
   ],
   imports: [
     BrowserModule,

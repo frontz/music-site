@@ -41,7 +41,8 @@ export class BasketService {
 
   clearItems() {
     this.selectedItems = [];
-    console.log(this.selectedItems);
+    console.log('Wykasowano');
+    localStorage.setItem("items", JSON.stringify(this.selectedItems));
   }
 
   isAdded(id: number) {

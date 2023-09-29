@@ -5,7 +5,6 @@ import {CustomMusicComponent} from "./pages/custom-music/custom-music.component"
 import {OriginalProjectsComponent} from "./pages/original-projects/original-projects.component";
 import {ContactComponent} from "./pages/contact/contact.component";
 import {BasketComponent} from "./pages/basket/basket.component";
-import { StripePaymentComponent } from './pages/stripe-payment/stripe-payment.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/about', pathMatch: 'full' },
@@ -14,7 +13,6 @@ const routes: Routes = [
   { path: 'original-projects', component: OriginalProjectsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'basket', component: BasketComponent },
-  { path: 'payment', component: StripePaymentComponent },
 ];
 
 @NgModule({
