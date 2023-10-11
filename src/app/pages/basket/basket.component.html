@@ -14,6 +14,6 @@
         </tbody>
       </table>
       <h5 class="text-end">Total price: {{ getTotalPrice() | currency }}</h5>
-      <button class="btn btn-primary" *ngIf="getTotalPrice() > 0">{{ 'basket.cash' | translate }}</button>
+      <button class="btn btn-primary" *ngIf="getTotalPrice() > 0" routerLink="/stripe">{{ 'basket.cash' | translate }}</button>
     </div>
 </div>
