@@ -18,12 +18,4 @@ export class OriginalProjectsComponent implements OnInit {
     this.albums = this.basket.getAlbums();
   }
 
-  addAlbum(album: Album) {
-    this.basket.addItem(album);
-  }
-
-  isAlbumAdded(id: number) {
-    return this.basket.isAdded(id);
-  }
-
 }

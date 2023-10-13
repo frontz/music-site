@@ -7,22 +7,10 @@ import {BasketService} from "../../services/basket.service";
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent {
   constructor(public translate: TranslateService, private basket: BasketService) {
     translate.setDefaultLang('en');
     translate.use('en');
-  }
-
-  quantity: number = 0;
-
-  ngOnInit() {
-    console.log('navbar-component');
-    this.basket.getItems();
-    this.quantity = this.basket.getItems().length;
-  }
-
-  getNumberOfItems() {
-    return this.basket.getItems().length;
   }
 
 }

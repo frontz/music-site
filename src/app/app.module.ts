@@ -12,7 +12,6 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { OriginalProjectsComponent } from './pages/original-projects/original-projects.component';
 import { CustomMusicComponent } from './pages/custom-music/custom-music.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { BasketComponent } from './pages/basket/basket.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient, "./assets/i18n/", ".json");
@@ -27,7 +26,6 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     ContactComponent,
     OriginalProjectsComponent,
     CustomMusicComponent,
-    BasketComponent
   ],
   imports: [
     BrowserModule,

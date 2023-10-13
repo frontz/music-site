@@ -44,12 +44,6 @@
         "messageError": "Please, enter a message!",
         "confirmError": "The field is required!"
     },
-    "basket": {
-      "title": "Your order",
-      "noProducts": "No products ordered",
-      "add": "Add to cart",
-      "cash": "To the cash"
-    },
     "privacy": {
         "title": "Read below text, please",
         "privacy": "Privacy policy",

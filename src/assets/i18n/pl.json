@@ -43,12 +43,6 @@
         "messageError": "Proszę wpisać wiadomość!",
         "confirmError": "Pole jest wymagane!"
     },
-  "basket": {
-    "title": "Twoje zamówienie",
-    "noProducts": "Brak zamówionych produktów",
-    "add": "Do koszyka",
-    "cash": "Do kasy"
-  },
     "privacy": {
         "title": "Przeczytaj, proszę, poniższy tekst",
         "privacy": "Polityka prywatności",

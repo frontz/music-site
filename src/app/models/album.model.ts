@@ -3,5 +3,6 @@ export interface Album {
   title: string;
   pathToImg: string;
   description: string;
+  linkToListen: string;
   price: number;
 }

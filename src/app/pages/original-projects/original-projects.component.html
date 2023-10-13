@@ -13,12 +13,15 @@
             <p class="card-text">
                 {{ album.description | translate}}
             </p>
-
-            <button class="btn btn-primary" (click)="addAlbum(album)" [disabled]="isAlbumAdded(album.id)">{{ 'basket.add' | translate }}</button>
+            <ng-container *ngIf="album.id !== 1; else notAvailable">
+            <a href="{{ album.linkToListen }}" target="_blank"><button class="btn btn-primary">{{ 'original-projects.listen' | translate }}</button></a>
+            </ng-container>
+            <ng-template #notAvailable>
+              <button class="btn btn-primary" disabled>{{ 'original-projects.unvailable' | translate }}</button>
+            </ng-template>
           </div>
         </div>
       </div>
-
       <div class="col-sm"></div>
     </div>
   </div>
