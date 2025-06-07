@@ -1,0 +1,16 @@
+{% load django_bootstrap5 %}
+
+<html>
+    <head>
+        <title>Music site</title>
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+    </head>
+</html>
+<body>
+    {% include "main/navbar.html" %}
+    <div class="container">
+        HOME
+    </div>
+    {% include "main/footer.html" %}
+</body>
