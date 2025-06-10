@@ -1,0 +1,18 @@
+{#{% load static %}#}
+{% load django_bootstrap5 %}
+
+<html>
+    <head>
+        <title>Music site</title>
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+{#        <link href="{% static "css/main.css" %}" rel="stylesheet">#}
+    </head>
+
+    <body>
+        {% include "main/navbar.html" %}
+        {% block content %}{% endblock %}
+        {% include "main/footer.html" %}
+    </body>
+</html>
+

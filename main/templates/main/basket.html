@@ -1,16 +1,7 @@
-{% load django_bootstrap5 %}
+{% extends "main/base.html" %}
 
-<html>
-    <head>
-        <title>Music site</title>
-        {% bootstrap_css %}
-        {% bootstrap_javascript %}
-    </head>
-</html>
-<body>
-    {% include "main/navbar.html" %}
-    <div class="container">
-        BASKET
-    </div>
-    {% include "main/footer.html" %}
-</body>
+{% block content %}
+  <div class="container">
+      BASKET
+  </div>
+{% endblock %}
