@@ -1,5 +1,57 @@
-<nav class="navbar fixed-bottom navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Fixed bottom</a>
+{% load static %}
+{% load bootstrap_icons %}
+<footer class="bg-dark fixed-bottom text-light py-4 mt-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- LOGO -->
+      <div class="col-md-4 mb-3 mb-md-0">
+          <a class="navbar-brand" href="{% url "main:home" %}">
+              <img src="{% static '/img/logo.png' %}" style="width: 38px" alt="logo">
+          </a>
+      </div>
+
+      <!-- LINKI -->
+      <div class="col-md-4 mb-3 mb-md-0 text-center">
+        <a href="{% url 'main:home' %}" class="text-light text-decoration-none me-3">Home</a>
+        <a href="{% url 'main:about' %}" class="text-light text-decoration-none me-3">About</a>
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="display: inline-block"  >
+            Music
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{% url "main:solo_albums" %}">Solo albums</a></li>
+            <li><a class="dropdown-item" href="{% url "main:film_music" %}">Film music</a></li>
+          </ul>
+        <a href="{% url 'main:contact' %}" class="text-light text-decoration-none" style="margin-left: 10px" >Contact</a>
+      </div>
+
+      <!-- IKONY -->
+      <div class="col-md-4 text-md-end text-center">
+        <a href="https://facebook.com" class="text-light text-decoration-none me-3">
+          {% bs_icon "facebook" size="1.5em" %}
+        </a>
+        <a href="https://instagram.com" class="text-light text-decoration-none me-3">
+          {% bs_icon "instagram" size="1.5em" %}
+        </a>
+        <a href="https://youtube.com" class="text-light text-decoration-none me-3">
+          {% bs_icon "youtube" size="1.5em" %}
+        </a>
+        <!-- SoundCloud jako SVG -->
+        <a href="https://soundcloud.com/TwojProfil" class="text-light text-decoration-none" title="SoundCloud">
+            <span style="position: relative; top: 7px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                   viewBox="0 0 24 24" class="align-text-bottom">
+                <path d="M17.319 9.233c-.619 0-1.205.168-1.715.462a5.024 5.024 0 00-3.673-1.626c-.663
+                0-1.303.13-1.888.368v7.014h7.276a3.408 3.408 0 00.205-6.218 3.276 3.276 0 00-.205-.001zM3.98
+                10.733h-.042a.48.48 0 00-.48.48v4.032a.48.48 0 00.48.48h.042a.48.48 0 00.48-.48v-4.032a.48.48 0
+                00-.48-.48zm1.746.378a.48.48 0 00-.48.48v3.276a.48.48 0 00.96 0v-3.276a.48.48 0 00-.48-.48zm1.746.378a.48.48
+                0 00-.48.48v2.52a.48.48 0 00.96 0v-2.52a.48.48 0 00-.48-.48zm1.746.378a.48.48 0 00-.48.48v1.764a.48.48 0 00.96
+                0v-1.764a.48.48 0 00-.48-.48zm1.746.378a.48.48 0 00-.48.48v1.008a.48.48 0 00.96 0v-1.008a.48.48 0 00-.48-.48z"></path>
+              </svg>
+            </span>
+        </a>
+      </div>
+
+    </div>
   </div>
-</nav>
+</footer>
