@@ -13,16 +13,16 @@
 
       <!-- LINKI -->
       <div class="col-md-4 mb-3 mb-md-0 text-center">
-        <a href="{% url 'main:home' %}" class="text-light text-decoration-none me-3">Home</a>
-        <a href="{% url 'main:about' %}" class="text-light text-decoration-none me-3">About</a>
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="display: inline-block"  >
+        <a href="{% url 'main:home' %}" class="{% if request.path == '/' %}text-light{% else %}text-secondary{% endif %} text-decoration-none me-3">Home</a>
+        <a href="{% url 'main:about' %}" class="{% if request.path == '/about' %}text-light{% else %}text-secondary{% endif %} text-decoration-none me-3">About</a>
+          <a class="dropdown-toggle {% if request.path == '/solo_albums' or request.path == '/film_music' %}text-light{% else %}text-secondary{% endif %} text-decoration-none me-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="display: inline-block"  >
             Music
           </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{% url "main:solo_albums" %}">Solo albums</a></li>
-            <li><a class="dropdown-item" href="{% url "main:film_music" %}">Film music</a></li>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item text-secondary text-decoration-none me-3" href="{% url "main:solo_albums" %}">Solo albums</a></li>
+            <li><a class="dropdown-item text-secondary text-decoration-none me-3" href="{% url "main:film_music" %}">Film music</a></li>
           </ul>
-        <a href="{% url 'main:contact' %}" class="text-light text-decoration-none" style="margin-left: 10px" >Contact</a>
+        <a href="{% url 'main:contact' %}" class="{% if request.path == '/contact' %}text-light{% else %}text-secondary{% endif %} text-decoration-none me-3">Contact</a>
       </div>
 
       <!-- IKONY -->
