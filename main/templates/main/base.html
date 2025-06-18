@@ -11,6 +11,7 @@
 
     <body>
         {% include "main/navbar.html" %}
+        {% block title %}{% endblock %}
         {% block content %}{% endblock %}
         {% include "main/footer.html" %}
     </body>
